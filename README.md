@@ -115,11 +115,11 @@ You can also correct by flashing Android 7 NMF26H stock images from fastboot, th
 
 Why did we use TWRP? 
 
-	Believe it or not, TWRP was the easiest way to take a full image of the userdata partition. As we were not making any system software modifications, but did require initial setup, permissions, and a DPM set device owner command. Android backup files did not save permissions, and making a userdata partition from only the APK did not save device admin.
+ -- Believe it or not, TWRP was the easiest way to take a full image of the userdata partition. As we were not making any system software modifications, but did require initial setup, permissions, and a DPM set device owner command. Android backup files did not save permissions, and making a userdata partition from only the APK did not save device admin.
 
 Why the bat and sh scripts?
 
-	This submission was designed to be installed on 600+ tablets during the field test. We wanted the fasted and most error free way of accomplishing this. Also, tablets would periodically break and require a reset.
+ -- This submission was designed to be installed on many tablets during the field test. We wanted the fasted and most error free way of accomplishing this.
 
 ## Author
 
