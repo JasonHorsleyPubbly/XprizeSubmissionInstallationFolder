@@ -35,14 +35,20 @@ Manual and automated installation options for CCI's Xprize entry.
 ### Paths
 
 * Extract the Android 7.1.1 stock images from 
+|   |   |
+|---|---|
 |FROM|~/Downloads/ryu-nmf26h-factory-52ad10d8.zip/ryu-nmf26h/*|
 |TO|./AndroidSystemImages/image-ryu-nmf26h/*|
 
 * Move TWRP image
+|   |   |
+|---|---|
 |FROM|~/Downloads/twrp-3.2.3-0-dragon.img|
 |TO|./TWRP/twrp-3.2.3-0-dragon.img|
 
 * Move a CCI submission
+|   |   |
+|---|---|
 |FROM|~/Downloads/{A_CCI_XPRIZE_SUBMISSION}/|
 |TO|./Submissions/{A_CCI_XPRIZE_SUBMISSION}/|
 
@@ -55,6 +61,7 @@ Manual and automated installation options for CCI's Xprize entry.
 
 * Check your git for the following hirearchy
 
+.
 /project/root/
 |-- Submissions
 |   |-- {A_CCI_XPRIZE_SUBMISSION}
