@@ -3,7 +3,7 @@ _____
 
 Starting point
 
-Start a terminal, powershell, or Command Prompt (AS ADMIN) from within the following folder hirearchy.
+Start a terminal, powershell, or Command Prompt (AS ADMIN) from within the following folder hierarchy.
 
 .  (Cmd/Terminal here)
 ├── Submissions  

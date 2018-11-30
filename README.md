@@ -59,7 +59,7 @@ TO   ./Submissions/{A_CCI_XPRIZE_SUBMISSION}/
 	
 - NOTE, if you are running the .bat file from a Command Line (not powershell), ensure that cmd.exe was launched As Administrator. Fastboot commands with otherwise not work.
 
-* Check your git for the following hirearchy
+* Check your git for the following hierarchy
 
 <pre>
 .  
