@@ -35,16 +35,22 @@ Manual and automated installation options for CCI's Xprize entry.
 ### Paths
 
 * Extract the Android 7.1.1 stock images  
+<pre>
 FROM ~/Downloads/ryu-nmf26h-factory-52ad10d8.zip/ryu-nmf26h/*  
 TO   ./AndroidSystemImages/image-ryu-nmf26h/*  
+</pre>
 
 * Move TWRP image  
+<pre>
 FROM ~/Downloads/twrp-3.2.3-0-dragon.img  
 TO   ./TWRP/twrp-3.2.3-0-dragon.img  
+</pre>
 
 * Move a CCI submission.  
+<pre>
 FROM ~/Downloads/{A_CCI_XPRIZE_SUBMISSION}/  
 TO   ./Submissions/{A_CCI_XPRIZE_SUBMISSION}/  
+</pre>
 
 * Ensure that adb and fastboot are both executable from your terminal or command line path.
 	* adb --version
@@ -55,6 +61,7 @@ TO   ./Submissions/{A_CCI_XPRIZE_SUBMISSION}/
 
 * Check your git for the following hirearchy
 
+<pre>
 .  
 ├── Submissions  
 |   └── {A_CCI_XPRIZE_SUBMISSION}  
@@ -75,6 +82,7 @@ TO   ./Submissions/{A_CCI_XPRIZE_SUBMISSION}/
 ├── Install_Submission.bat  
 ├── Install_Submission_Manual.txt  
 └── README.md  
+</pre>
 
 * You are now ready to install the submission.
 
