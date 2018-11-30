@@ -99,16 +99,19 @@ If the installation fails for any reason, first attempt the manual instructions 
 
 * Bad EXT4 partition on Pixel C tablet: 
 On some windows distributions, an ext2fs will be sent instead of the ext4fs. This causes TWRP to see a full partition, and it will have no extra space to download the submittal. To manually correct this, reset the partition file type from within TWRP.
-	* Launch TWRP
-	* Wipe
-	* Advanced Wipe
-	* Check data
-	* Repair or Change File System
-	* Change File System
-	* EXT2
-	* Swipe to Change
-	* EXT4
-	* Swipe to Change
+	-> Select "Wipe"
+	-> Select "Advanced Wipe"
+	-> Check "data"
+	-> Select "Repair or Change File System"
+	-> Select "Change File System"
+	-> Select "EXT2"
+	-> Swipe "Swipe to Change"
+	-> Wait until finish
+	-> Select "EXT4"
+	-> Swipe "Swipe to Change"
+	-> Wait until finish
+	-> Back out to TWRP home.
+	-- Userdata partition has been reset, and you can now safely restore
 You can also correct by flashing Android 7 NMF26H stock images from fastboot, then rebooting to the initial setup wizard.
 
 ## Notes
