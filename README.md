@@ -17,68 +17,63 @@ Manual and automated installation options for CCI's Xprize entry.
 * Fastboot
 * Android Debug Bridge
 
-Fastboot and Android Debug Bridge can be downloaded as part of the Android SDK
-```
-[Android SDK](https://developer.android.com/studio/)
-```
-Or as standalone platform tools
-```
-[Standalone Platform Tools](https://developer.android.com/studio/releases/platform-tools#download)
-```
+* Fastboot and Android Debug Bridge can be downloaded as part of the Android SDK or as standalone platform tools
+	[Android SDK](https://developer.android.com/studio/)
+	[Standalone Platform Tools](https://developer.android.com/studio/releases/platform-tools#download)
 
 * Android 7.1.1 (NMF26H) for the Google Pixel C
-```
-[7.1.1 NMF26H](https://developers.google.com/android/images)
-```
+	[7.1.1 NMF26H](https://developers.google.com/android/images)
 
 * Team Windows Recovery Project for Dragon
-```
-[twrp-3.2.3-0-dragon](https://dl.twrp.me/dragon/twrp-3.2.3-0-dragon.img.html)
-```
+	[twrp-3.2.3-0-dragon](https://dl.twrp.me/dragon/twrp-3.2.3-0-dragon.img.html)
+
 
 * One of the three official CCI Xprize submissions
-```
-[TODO: Open source submission here]()
-```
+	[TODO: Open source submission here]()
 
 
 ### Paths
 
-* Extract the Android 7.1.1 stock images from ~/Downloads/ryu-nmf26h-factory-52ad10d8.zip/ryu-nmf26h/* to ./AndroidSystemImages/image-ryu-nmf26h/*
+* Extract the Android 7.1.1 stock images from 
+	FROM -- ~/Downloads/ryu-nmf26h-factory-52ad10d8.zip/ryu-nmf26h/*
+	TO   -- ./AndroidSystemImages/image-ryu-nmf26h/*
 
-* Move ~/Downloads/twrp-3.2.3-0-dragon.img to ./TWRP/twrp-3.2.3-0-dragon.img
+* Move TWRP image
+	FROM -- ~/Downloads/twrp-3.2.3-0-dragon.img
+	TO   -- ./TWRP/twrp-3.2.3-0-dragon.img
 
-* Move ~/Downloads/{A_CCI_XPRIZE_SUBMISSION}/ to ./Submissions/{A_CCI_XPRIZE_SUBMISSION}/
+* Move a CCI submission
+	FROM -- ~/Downloads/{A_CCI_XPRIZE_SUBMISSION}/
+	TO   -- ./Submissions/{A_CCI_XPRIZE_SUBMISSION}/
 
 * Ensure that adb and fastboot are both executable from your terminal or command line path.
 	* adb --version
 	* fastboot --version
-	> Should both return version numbers.
+	- Should both return version numbers.
 	
-> NOTE, if you are running the .bat file from a Command Line (not powershell), ensure that cmd.exe was launched As Administrator. Fastboot commands with otherwise not work.
+- NOTE, if you are running the .bat file from a Command Line (not powershell), ensure that cmd.exe was launched As Administrator. Fastboot commands with otherwise not work.
 
 * Check your git for the following hirearchy
 
-|- Submissions
-|   |- {A_CCI_XPRIZE_SUBMISSION}
-|     |- data.ext4.win000
-|     |- data.ext4.win000.md5
-|     |- data.ext4.win001
-|     |- data.ext4.win001.md5
-|     |- ... (more depending on size)
-|- AndroidSystemImages/
-|   |- image-ryu-nmf26h
-|   	|- boot.img
-|   	|- cache.img
-|   	|- recovery.img
-|   	|- vendor.img
-|   	|- system.img
-|- TWRP
-|   |- twrp-3.2.3-0-dragon.img
-|- Install_Submission.bat
-|- Install_Submission.sh
-|- Install_Submission_Manual.txt
-|- README.md
+Submissions
+	{A_CCI_XPRIZE_SUBMISSION}
+		data.ext4.win000
+		data.ext4.win000.md5
+		data.ext4.win001
+		data.ext4.win001.md5
+		... (more depending on size)
+AndroidSystemImages/
+	image-ryu-nmf26h
+		boot.img
+		cache.img
+		recovery.img
+		vendor.img
+		system.img
+TWRP
+	twrp-3.2.3-0-dragon.img
+Install_Submission.bat
+Install_Submission_Manual.txt
+README.md
 
 * You are now ready to install the submission.
 
@@ -119,7 +114,7 @@ Why the bat and sh scripts?
 
 ## Author
 
-* **Jason Horsley** - *Initial work* - [PurpleBooth](https://github.com/JasonHorsleyTech)
+* **Jason Horsley**
 
 ## License
 
