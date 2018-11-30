@@ -34,23 +34,14 @@ Manual and automated installation options for CCI's Xprize entry.
 
 ### Paths
 
-* Extract the Android 7.1.1 stock images from 
-|   |   |
-|---|---|
-|FROM|~/Downloads/ryu-nmf26h-factory-52ad10d8.zip/ryu-nmf26h/*|
-|TO|./AndroidSystemImages/image-ryu-nmf26h/*|
+* Extract the Android 7.1.1 stock images
+FROM ~/Downloads/ryu-nmf26h-factory-52ad10d8.zip/ryu-nmf26h/* to ./AndroidSystemImages/image-ryu-nmf26h/*
 
 * Move TWRP image
-|   |   |
-|---|---|
-|FROM|~/Downloads/twrp-3.2.3-0-dragon.img|
-|TO|./TWRP/twrp-3.2.3-0-dragon.img|
+FROM ~/Downloads/twrp-3.2.3-0-dragon.img to ./TWRP/twrp-3.2.3-0-dragon.img
 
-* Move a CCI submission
-|   |   |
-|---|---|
-|FROM|~/Downloads/{A_CCI_XPRIZE_SUBMISSION}/|
-|TO|./Submissions/{A_CCI_XPRIZE_SUBMISSION}/|
+* Move a CCI submission.
+From ~/Downloads/{A_CCI_XPRIZE_SUBMISSION}/ to ./Submissions/{A_CCI_XPRIZE_SUBMISSION}/
 
 * Ensure that adb and fastboot are both executable from your terminal or command line path.
 	* adb --version
@@ -61,27 +52,27 @@ Manual and automated installation options for CCI's Xprize entry.
 
 * Check your git for the following hirearchy
 
-.
-/project/root/
-|-- Submissions
-|   |-- {A_CCI_XPRIZE_SUBMISSION}
-|     |-- data.ext4.win000
-|     |-- data.ext4.win000.md5
-|     |-- data.ext4.win001
-|     |-- data.ext4.win001.md5
-|     |-- ... (more depending on size)
-|-- AndroidSystemImages/
-|   |-- image-ryu-nmf26h
-|   	|-- boot.img
-|   	|-- cache.img
-|   	|-- recovery.img
-|   	|-- vendor.img
-|   	|-- system.img
-|-- TWRP
-|   |-- twrp-3.2.3-0-dragon.img
-|-- Install_Submission.bat
-|-- Install_Submission_Manual.txt
-|-- README.md
+> 
+> /project/root/
+> |-- Submissions
+> |   |-- {A_CCI_XPRIZE_SUBMISSION}
+> |     |-- data.ext4.win000
+> |     |-- data.ext4.win000.md5
+> |     |-- data.ext4.win001
+> |     |-- data.ext4.win001.md5
+> |     |-- ... (more depending on size)
+> |-- AndroidSystemImages/
+> |   |-- image-ryu-nmf26h
+> |   	|-- boot.img
+> |   	|-- cache.img
+> |   	|-- recovery.img
+> |   	|-- vendor.img
+> |   	|-- system.img
+> |-- TWRP
+> |   |-- twrp-3.2.3-0-dragon.img
+> |-- Install_Submission.bat
+> |-- Install_Submission_Manual.txt
+> |-- README.md
 
 * You are now ready to install the submission.
 
