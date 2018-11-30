@@ -52,27 +52,26 @@ From ~/Downloads/{A_CCI_XPRIZE_SUBMISSION}/ to ./Submissions/{A_CCI_XPRIZE_SUBMI
 
 * Check your git for the following hirearchy
 
-> 
-> /project/root/
-> |-- Submissions
-> |   |-- {A_CCI_XPRIZE_SUBMISSION}
-> |     |-- data.ext4.win000
-> |     |-- data.ext4.win000.md5
-> |     |-- data.ext4.win001
-> |     |-- data.ext4.win001.md5
-> |     |-- ... (more depending on size)
-> |-- AndroidSystemImages/
-> |   |-- image-ryu-nmf26h
-> |   	|-- boot.img
-> |   	|-- cache.img
-> |   	|-- recovery.img
-> |   	|-- vendor.img
-> |   	|-- system.img
-> |-- TWRP
-> |   |-- twrp-3.2.3-0-dragon.img
-> |-- Install_Submission.bat
-> |-- Install_Submission_Manual.txt
-> |-- README.md
+> /project/root/  
+> |-- Submissions  
+> |   |-- {A_CCI_XPRIZE_SUBMISSION}  
+> |     |-- data.ext4.win000  
+> |     |-- data.ext4.win000.md5  
+> |     |-- data.ext4.win001  
+> |     |-- data.ext4.win001.md5  
+> |     |-- ... (more depending on size)  
+> |-- AndroidSystemImages/  
+> |   |-- image-ryu-nmf26h  
+> |   	|-- boot.img  
+> |   	|-- cache.img  
+> |   	|-- recovery.img  
+> |   	|-- vendor.img  
+> |   	|-- system.img  
+> |-- TWRP  
+> |   |-- twrp-3.2.3-0-dragon.img  
+> |-- Install_Submission.bat  
+> |-- Install_Submission_Manual.txt  
+> |-- README.md  
 
 * You are now ready to install the submission.
 
