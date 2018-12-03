@@ -39,21 +39,24 @@ EXIT /B %ERRORLEVEL%
 
 :preflightFail
     echo "Error: Required assets missing. Please ensure the following hirearechy at cwd"
-	echo "|- Submissions"
-	echo "|   |- %submission%"
-	echo "|     |- data.ext4.win000"
-	echo "|     |- data.ext4.win000.md5"
-	echo "|     |- data.ext4.win001"
-	echo "|     |- data.ext4.win001.md5"
-	echo "|     |- ... (more depending on size)"
-	echo "|- AndroidSystemImages/image-ryu-nmf26h"
-	echo "|   	|- boot.img"
-	echo "|   	|- cache.img"
-	echo "|   	|- recovery.img"
-	echo "|   	|- vendor.img"
-	echo "|   	|- system.img"
-	echo "|- TWRP"
-	echo "|   |- twrp-3.2.3-0-dragon.img"
+	echo "├── Submissions
+	echo "|   └── {A_CCI_XPRIZE_SUBMISSION}"
+	echo "|       ├── data.ext4.win000"
+	echo "|       ├── data.ext4.win000.md5"
+	echo "|       ├── data.ext4.win001"
+	echo "|       ├── data.ext4.win001.md5"
+	echo "|       └── ... (more depending on size)"
+	echo "├── AndroidSystemImages/"
+	echo "|   └── image-ryu-nmf26h"
+	echo "|       ├── boot.img"
+	echo "|       ├── cache.img"
+	echo "|       ├── recovery.img"
+	echo "|       ├── vendor.img"
+	echo "|       └── system.img"
+	echo "├── TWRP  "
+	echo "|   └── twrp-3.2.3-0-dragon.img  "
+	echo "├── Install_Submission.bat  "
+	echo "└── README.md  "
 	exit
 
 :fullInstall
@@ -82,7 +85,7 @@ EXIT /B %ERRORLEVEL%
 	echo Waiting for ADB, do not interrupt
 	SLEEP 8
 	adb reboot recovery
-	echo Waiting for full TWRP launch, do not interrupt
+	echo Waiting for full TWRP launch. May take 1 minute, do not interrupt
 	SLEEP 60
 	adb devices
 	GOTO:EOF
