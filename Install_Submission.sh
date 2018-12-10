@@ -8,24 +8,14 @@ precheck=true
 
 submissionName="XprizeUpdate2"
 # CHECK IF XPRIZE FILES EXIST:
-if [ ! -f "Submissions/${submissionName}/data.ext4.win000" ]; then
+if [ ! -f "Submissions/${submissionName}/data.ext4.win" ]; then
     precheck=false
-    echo "data.ext4.win000 is missing."
+    echo "data.ext4.win is missing."
 fi
 
-if [ ! -f "Submissions/${submissionName}/data.ext4.win000.sha2" ]; then
+if [ ! -f "Submissions/${submissionName}/data.ext4.win.sha2" ]; then
     precheck=false
-    echo "data.ext4.win000.sha2 is missing."
-fi
-
-if [ ! -f "Submissions/${submissionName}/data.ext4.win001" ]; then
-    precheck=false
-    echo "data.ext4.win001 is missing."
-fi
-
-if [ ! -f "Submissions/${submissionName}/data.ext4.win001.sha2" ]; then
-    precheck=false
-    echo "data.ext4.win001.sha2 is missing."
+    echo "data.ext4.win.sha2 is missing."
 fi
 
 if [ ! -f "Submissions/${submissionName}/data.info" ]; then
@@ -88,10 +78,8 @@ else
     echo "Error: Required assets missing. Please ensure the following hirearechy at cwd"
 	echo "├── Submissions  "
 	echo "|   └── ${submissionName}  "
-	echo "|       ├── data.ext4.win000  "
-	echo "|       ├── data.ext4.win000.md5  "
-	echo "|       ├── data.ext4.win001  "
-	echo "|       ├── data.ext4.win001.md5  "
+	echo "|       ├── data.ext4.win  "
+	echo "|       ├── data.ext4.win.sha2  "
 	echo "|       └── ... (more depending on size)  "
 	echo "├── AndroidSystemImages/  "
 	echo "|   └── image-ryu-nmf26h  "

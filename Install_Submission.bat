@@ -18,7 +18,7 @@ EXIT /B %ERRORLEVEL%
 	echo.
 	echo ________________
 	set /p submission="Please choose a submission to install from the list above: "
-	if exist Submissions/%submission%/data.ext4.win000 (
+	if exist Submissions/%submission%/data.info (
 		goto preflightChecks
 	)	else	(
 		echo "Error: %submission% does not appear to be a valid TWRP backup folder"
@@ -27,7 +27,7 @@ EXIT /B %ERRORLEVEL%
 	exit
 
 :preflightChecks
-	if not exist Submissions/%submission%/data.ext4.win000 goto preflightFail
+	if not exist Submissions/%submission%/data.info goto preflightFail
 	if not exist AndroidSystemImages/image-ryu-nmf26h/boot.img goto preflightFail
 	if not exist AndroidSystemImages/image-ryu-nmf26h/cache.img goto preflightFail
 	if not exist AndroidSystemImages/image-ryu-nmf26h/recovery.img goto preflightFail
@@ -41,10 +41,8 @@ EXIT /B %ERRORLEVEL%
     echo "Error: Required assets missing. Please ensure the following hirearechy at cwd"
 	echo "├── Submissions
 	echo "|   └── {A_CCI_XPRIZE_SUBMISSION}"
-	echo "|       ├── data.ext4.win000"
-	echo "|       ├── data.ext4.win000.md5"
-	echo "|       ├── data.ext4.win001"
-	echo "|       ├── data.ext4.win001.md5"
+	echo "|       ├── data.ext4.win"
+	echo "|       ├── data.ext4.win.sha2"
 	echo "|       └── ... (more depending on size)"
 	echo "├── AndroidSystemImages/"
 	echo "|   └── image-ryu-nmf26h"
@@ -92,7 +90,6 @@ EXIT /B %ERRORLEVEL%
 	
 :twrpInstall
 	echo pushing %submission%
-	adb shell twrp wipe data
 	adb shell twrp backup D folderHack
 	adb push Submissions/%submission% /sdcard/TWRP/BACKUPS/serialno/
 	adb shell twrp restore %submission%
